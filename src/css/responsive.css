@@ -1,0 +1,53 @@
+@media only screen and (max-width:680px), (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    /* Logo start  */
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo-text {
+        display: none;
+    }
+    /* Logo end  */
+
+    /* Main start  */
+    #main-image {
+        display: none;
+    }
+    /* Main end  */
+/* Section campaign start */
+#campaign {
+    padding-top: 30px;
+}
+/* Section campaign end */
+
+/* Section service start */
+#service {
+    display: flex;
+    flex-direction: column;
+}
+/* Section service  end */
+
+/* Section portfolio start */
+#portfolio {
+    display: flex;
+    flex-direction: column;
+}
+/* Section portfolio end */
+
+/* Section grid container start */
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+/* Section grid container end */
+}

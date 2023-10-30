@@ -1,0 +1,197 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    margin: 0 ;
+}
+
+nav {
+    background-color: aliceblue;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position:fixed;
+}
+
+.nav-bar:hover {
+    background: lightblue;
+    margin-top: -3px;
+}
+.nav-item:hover {
+    background: lightblue;
+    margin-top: -3px;
+}
+
+/* Logo start */
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logo-image{
+    height: 50px;
+}
+#logo-text {
+    height: 50px;
+    text-align: center;
+}
+/* Logo end */
+
+/* Nav list start  */
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-item {
+    border: 1px solid transparent;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+/* Nav list end  */
+
+/* Main start  */
+#main {
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 350px;
+    padding: 30px;
+}
+
+#main-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cta-explore {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    background-color:crimson;
+
+}
+/* Main end  */
+
+/* Section Campaign start  */
+#campaign {
+    background-color: pink;
+    padding-top: 100px;
+}
+#h2-campaign {
+    text-align: center;
+}
+
+#campaign-text {
+    text-align: center;
+}
+
+#cta-campaign {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    background-color:crimson;
+}
+/* Section Campaign end  */
+
+/* Section service start  */
+#service {
+    background-color: aliceblue;
+}
+/* Section service end  */
+
+/* Section portfolio start  */
+#portfolio {
+    background-color: blanchedalmond;
+}
+/* Section portfolio end  */
+
+/* Section form start  */
+#form-section {
+    background-color: aliceblue;
+}
+
+#form-section form , #form-header {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label-name {
+    font-weight: bold;
+}
+
+.input-form {
+    width: 400px;
+
+}
+button {
+    max-width: 480px;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+/* Section form end  */
+
+/* Footer start */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+/* Footer end */
+
+/* Section grid container start  */
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1em;
+    width: 100%;
+}
+.grid-container-aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+    width: 100%;
+}
+
+.grid-container-image {
+    height: 15em;
+    width: 15em;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.grid-container-image-aside {
+    height: 15em;
+    width: 15em;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.grid-container-figcaption {
+    text-align: center;
+}
+/* Section grid container end  */

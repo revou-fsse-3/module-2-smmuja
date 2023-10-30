@@ -1,0 +1,51 @@
+.hamburger {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width:680px), (max-width:768px) {
+
+
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* Hamburger start */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-list {
+        position:fixed;
+        right: 0;
+        top: 0;
+        width: 40vw;
+        height: 50vh;
+        padding-left: 10%;
+        justify-content:space-evenly;
+        flex-direction: column;
+        align-items:flex-start;
+        background-color: aliceblue;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .nav-item {
+        border: none;
+    }
+
+    .slide {
+        transform: translateX(0);
+    }
+    
+        /* Hamburger end */
+
+}
