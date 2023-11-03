@@ -16,6 +16,7 @@
 
     #logo-text {
         display: none;
+        font-size: xx-small;
     }
     /* Logo end  */
 
@@ -23,12 +24,26 @@
     #main-image {
         display: none;
     }
+    #main-text {
+        font-size: small;
+        width: 60%;
+    }
     /* Main end  */
 /* Section campaign start */
 #campaign {
     padding-top: 30px;
 }
 /* Section campaign end */
+
+/* Grid Container start */
+.grid-container {
+    box-sizing: border-box;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: 'service-1 service-2'
+                    'service-3 service-4' ;
+}
+/* Grid Container end */
 
 /* Section service start */
 #service {
@@ -44,10 +59,24 @@
 }
 /* Section portfolio end */
 
+/* Section form start */
+.input-form, label-name {
+    width: 90%;
+}
+/* Section form end */
+
 /* Section grid container start */
 .grid-container {
     display: flex;
     flex-direction: column;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 /* Section grid container end */
 }

@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Company Branding Profile">
+    <meta name="keywords" content="Branding, Marketing, WEB, SEO, Social Media">
+    <meta name="author" content="smmuja ">
     <title>Moo Branding | Your Branding Partner</title>
     <link
     rel="icon"
     type="image/png"
-    href="../assets/img/moo/moo-logo-favicon.png"
+    href="../assets/img/moo/moo-favicon.png"
     />
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/grid.css">
     <link rel="stylesheet" href="src/css/responsive.css">
     <link rel="stylesheet" href="src/css/hamburger.css">
+    <link rel="stylesheet" href="src/css/carousel.css">
 </head>
 <body>
     
@@ -20,7 +24,12 @@
         <header>
             <nav id="nav-bar">
                 <div class="logo">
-                    <img id="logo-image" src="assets/img/moo/moo-logo.png" alt="Moo Logo"/>
+                    <img id="logo-image" 
+                    srcset="assets/img/moo/moo-logo-square.png 480w, assets/img/moo/moo-logo-landscape.png 800w"
+                    sizes="(max-width: 768px) 480px,
+                    800px"
+                    src="assets/img/moo/moo-logo-landscape.png" 
+                    alt="Moo Logo"/>
                     <b id="logo-text">#YourBrandingPartner</b>
                 </div>
                 <div class="nav-list" id="nav-list">
@@ -31,54 +40,84 @@
                 </div>
     
                 <div class="hamburger" id="hamburger">
-                    <img src="assets/icon/hamburger-menu.svg">
+                    <img src="assets/icon/hamburger-menu.svg" alt="Hamburger menu">
                 </div>
             </nav>
         </header>
+
         <main id="main">
             <div id=main-text>
                 <p>What do you think when you hear the word "Moo"?</p>
-                <p>Cow?</p>
-                <p>Correct!</p>
-                <p>That's how branding should do</p>
-                <p>Learn how Moo Branding can help shape your brand, <span id="grow">and grow!</span></p>
+                <p><em><b>Cow?</b></em> Correct!</p>
+                <!-- <p>Correct!</p> -->
+                <p>It's :</p>
+                <ul>
+                    <li>Clear</li>
+                    <li>Catchy</li>
+                    <li>Memorable</li>
+                </ul>
+                <p>And that's how branding should do</p>
+                <p>Learn how Moo Branding can help shape your brand, and <span id="grow"> grow!</span></p>
                 <a id="cta-explore" href="#service">Explore More</a>
             </div>
-            <div id="main-image">
+            <!-- <div id="main-image">
                 <img src="assets/img/moo/ilustrasi-1.png" alt="Girl develop art project at workplace. By Maria Lutkova">
-            </div>
+            </div> -->
         </main>
         <section id="campaign">
             <h2 id="h2-campaign">Themed Campaign</h2>
             <div class="grid-container-aside">
                 <div id="campaign-text">
-                    <p>Ongoing and upcoming themed campaign</p>
+                    <p>Ongoing and upcoming campaign</p>
                     <p></p>to drive your sales</p>
                     <a id="cta-campaign" href="#form-section">Design Yours</a>
                 </div>
-                <div id="campaign-1">
-                    <figure>
-                        <img class="grid-container-image-aside" src="assets/img/moo/campaign-halloween.avif" alt="Halloween Pumpkin/Unsplash" />
-                        <figcaption class="grid-container-figcaption">Halloween</figcaption>
-                    </figure>
-                </div>
-                <div id="campaign-2">
-                    <figure>
-                        <img class="grid-container-image-aside" src="assets/img/moo/campaign-christmas.jpg" alt="Christmas/Getty Images" />
-                        <figcaption class="grid-container-figcaption">Christmas</figcaption>
-                    </figure>
-                </div>
-                <div id="campaign-3">
-                    <figure>
-                        <img class="grid-container-image-aside" src="assets/img/moo/campaign-lunar-new-year.jpg" alt="Lunar New Year/Getty Images" />
-                        <figcaption class="grid-container-figcaption">Lunar New Year</figcaption>
-                    </figure>
-                </div>
-                <div id="campaign-4">
-                    <figure>
-                        <img class="grid-container-image-aside" src="assets/img/moo/campaign-valentine.jpg" alt="valentine/hola.com" />
-                        <figcaption class="grid-container-figcaption">Valentine</figcaption>
-                    </figure>
+
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                        <div class="carousel-item">
+                            <img src="assets/img/moo/campaign-halloween.jpg" alt="Haloween pumpkin/Unsplash">
+                            <div class="carousel-caption">Haloween</div>
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item">
+                            <img src="assets/img/moo/campaign-christmas.jpg" alt="Christmas/Getty images">
+                            <div class="carousel-caption">Christmas</div>
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item">
+                            <img src="assets/img/moo/campaign-lunar-new-year.jpg" alt="Lunar New Year/Getty images">
+                            <div class="carousel-caption">Lunar New Year</div>
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item">
+                            <img src="assets/img/moo/campaign-valentine.jpg" alt="Valentine/hola.com">
+                            <div class="carousel-caption">Valentine</div>
+                        </div>
+                        <label for="carousel-4" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-4" class="carousel-control next control-3">›</label>
+            <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+            <label for="carousel-1" class="carousel-control next control-4">›</label>
+                        <ol class="carousel-indicators">
+                            <li>
+                                <label for="carousel-1" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-2" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-3" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-4" class="carousel-bullet">•</label>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </section>
@@ -202,7 +241,7 @@
                     </div>
                     <div>
                         <label for="date" class="label-name">Available for a call?</label>
-                        <input id="date" name="date" class="input-form" type="datetime-local">
+                        <input id="date" name="date" class="input-form" type="datetime-local" value="2023-12-21T11:00">
                     </div>
                     <div>
                         <label for="upload" class="label-name">Upload:</label>
@@ -230,7 +269,6 @@
                 <a class="nav-bottom" href="#">Blog</a>
                 <a class="nav-bottom" href="#">Privacy</a>
                 <a class="nav-bottom" href="#">Terms</a>
-                <a class="nav-bottom" href="#"></a>
             </div>
         </footer>
     </div>

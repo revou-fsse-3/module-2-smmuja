@@ -8,8 +8,8 @@
     grid-template-areas: 'header header header'
                     'main main campaign'
                     'video-section video-section campaign'
-                    'service service campaign' 
-                    'portfolio portfolio campaign' 
+                    'service service service' 
+                    'portfolio portfolio portfolio' 
                     'form-section form-section form-section'
                     'footer footer footer';
     /* grid-template-columns: 2fr 1fr;
@@ -47,18 +47,13 @@ header {
 
 /* Grid container */
 
-.grid-container {
-    /* width: 600px; */
-    /* margin: 50px auto; */
-    /* border: 5px none #333; */
+/* .grid-container {
     box-sizing: border-box;
     padding: 5px;
     display: grid;
     grid-template-areas: 'service-1 service-2'
                     'service-3 service-4' ;
-    /* grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; */
-}
+} */
 
 #main {
     grid-area: main;
