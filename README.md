@@ -2,7 +2,7 @@
 <p>A fictional Company Profile</p>
 
 ## Deployed here:
-https://moo-branding.netlify.app/
+https://smmuja.com/
 
 ## This documentation include
 - About the project
