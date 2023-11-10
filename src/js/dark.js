@@ -1,17 +1,18 @@
 const dark=document.querySelector("input[type='checkbox']")
     dark.addEventListener('click',()=>{
         if(dark.checked){
-            document.documentElement.setAttribute("date-theme","dark");
-            localStorage.setItem("date-theme","dark");
+            document.documentElement.setAttribute("data-theme","dark");
+            localStorage.setItem("data-theme","dark");
         }
         else{
-            document.documentElement.setAttribute("date-theme","light");
-            localStorage.setItem("date-theme","light");
+            document.documentElement.setAttribute("data-theme","light");
+            localStorage.setItem("data-theme","light");
         }    })
     console.log(dark)
-    const currentTheme=localStorage.getItem("date-theme")
+    const currentTheme=localStorage.getItem("data-theme")
     if(currentTheme ==="dark"){
         dark.checked=true
-        document.documentElement.setAttribute("date-theme","dark")
+        document.documentElement.setAttribute("data-theme","dark")
         
     }
+

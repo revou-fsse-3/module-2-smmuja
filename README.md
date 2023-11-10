@@ -2,7 +2,7 @@
 <p>A fictional Company Profile</p>
 
 ## Deployed here:
-https://smmuja.com/
+https://moo2.smmuja.com/
 
 ## This documentation include
 - About the project
@@ -10,8 +10,8 @@ https://smmuja.com/
 - Custom domain
 - The Author
 
-## 
-## This Company Profile include:
+##About the Project
+### This Company Profile include:
 - Home
 - Service Section
 - Portfolio Section
@@ -19,34 +19,32 @@ https://smmuja.com/
 - Call to action goal : Make a purchase
 
 
-## Version
-### Version 2 (Latest)
+### Version
+#### Version 2 (Latest)
 Link : https://moo2.smmuja.com/
+![Moo](assets/img/moo-desktop.png)
 
-### Version 1.3
+
+#### Version 1.3
 Link : https://moo-branding.netlify.app/
-<!-- - Desktop View
-![Desktop](assets/img/moo-desktop-3.png)
-- Mobile View
-![Mobile](assets/img/moo-mobile-3.png) -->
 
-### Version 1.2
+#### Version 1.2
 Link : https://moo-branding-2.netlify.app/
 
-### Version 1
+#### Version 1
 Link : https://moo-branding-1.netlify.app/
 
 
 ## Netlify Deploy
 This project is deployed and hosted on Netlify. Here's how
-1. Create a Netlify account at https://www.netlify.com/
+1. Create a Netlify account on https://www.netlify.com/
 2. After account is created you will see the home dashboard here, go to "Add new site" section
 ![Netlify Add Site](assets/img/deploy/netlify-add-site.png)
 3. We will use Github autodeploy, so let's choose Github
 ![Netlify Github](assets/img/deploy/netlify-github.png)
 4. Choose the organization and repository you want to deploy
 ![Netlify Github Organization](assets/img/deploy/netlify-github-organisation.png)
-5. Here we will use the default seting, so just go on and click "Deploy"
+5. Here we will use the default settings, so just go on and click "Deploy"
 ![Netlify Repository Deploy](assets/img/deploy/netlify-repository-deploy.png)
 6. Yor site is accessible via Netlify subdomain
 ![Netlify Subdomain](assets/img/deploy/netlify-subdomain.png)
@@ -64,9 +62,23 @@ This project is deployed and hosted on Netlify. Here's how
 4. Go to Niagahoster > DNS Management. Delete default DNS for A record and WWW CNAME record
 ![Niagahoster Delete DNS](assets/img/deploy/niagahoster-delete-dns-1.png)
 ![Niagahoster Delete DNS](assets/img/deploy/niagahoster-delete-dns-2.png)
-5.Add the DNS record from Netlify
+5. Add the DNS record from Netlify
 ![Niagahoster Add DNS](assets/img/deploy/niagahoster-add-dns.png)
-6. Website is acessible using your own domain
+> And it's done actually. But you can also use CloudFlare DNS Management
+6. Go to CloudFlare from https://cloudflare.com/
+![Cloudflare Sign up](assets/img/deploy/cloudflare-signup.png)
+7. Add your domain to CloudFlare
+![Cloudflare domain  ](assets/img/deploy/cloudflare-add-domain.png)
+![Cloudflare domain  ](assets/img/deploy/cloudflare-add-domain-2.png)
+![Cloudflare domain  ](assets/img/deploy/cloudflare-add-domain-3.png)
+8. Get CloudFlare name server
+![Cloudflare domain  ](assets/img/deploy/cloudflare-nameserver.png)
+9. Change the name server from Niagahoster DNS Management
+![Niagahoster name server Cloudflare  ](assets/img/deploy/niagahoster-nameserver-cloudflare.png)
+10. Add DNS record from Netlify to Cloudflare
+![Cloudflare DNS Add  ](assets/img/deploy/cloudflare-dns-add.png)
+
+11. Website is acessible using your own domain
 ![Netlify Website Custom Domain](assets/img/deploy/netlify-website-custom-domain.png)
 
 
