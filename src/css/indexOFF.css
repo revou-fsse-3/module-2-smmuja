@@ -1,26 +1,14 @@
-:root {
-    --var-primary: aliceblue;
-    --var-secondary: blanchedalmond;
-    --var-three: black;
-    --var-four: pink;
-    --var-five: rgb(240, 248, 255, 0.9 );
-    /* --var-six: -webkit-link; */
-    --var-six: blue;
-}
-[date-theme='dark'] {
-    --var-primary: #205295;
-    --var-secondary: #8d6262;
-    --var-three: whitesmoke;
-    --var-four: #624f82;
-    --var-five: #205295;
-    --var-six: beige;
-}
 /* Font and text start */
 @font-face {
     font-family: "Geologica";
     src: url(/assets/fonts/Geologica-Light.ttf);
 }
 
+/* @font-face {
+    font-family: "Geologica";
+    src: url(/assets/fonts/Geologica-Regular.ttf);
+    font-weight: 700;
+} */
 
 /* Font and text end */
 * {
@@ -38,6 +26,7 @@ body {
 }
 
 h2 {
+    /* text-shadow:2px 2px pink; */
     background-color: transparent;
 }
 
@@ -46,7 +35,11 @@ header {
 }
 
 nav {
-    background-color: var(--var-primary);
+    /* background-color: aliceblue; */
+    background-color: #205295;
+    /* background-color: rgb(138, 169, 255); */
+    /* dark */
+
     width: 100%;
     float: right;
     clear: both;
@@ -58,6 +51,10 @@ nav {
     justify-content: space-around;
     position:fixed;
     z-index: 1;
+}
+
+nav.dark {
+    background-color: #205295;
 }
 
 .nav-bar:hover {
@@ -77,10 +74,9 @@ nav {
 }
 
 .dark-toggle {
-    display: none;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 10px;
 }
 .dark-toggle img {
@@ -100,9 +96,13 @@ nav {
 #logo-text {
     /* height: 50px; */
     text-align: center;
-    color: var(--var-three);
+    color: whitesmoke;
+    /* dark  */
 }
 
+#logo-text.dark {
+    color: whitesmoke;
+}
 
 /* Logo end */
 
@@ -119,23 +119,33 @@ nav {
     padding: 5px;
     text-decoration: none;
     cursor: pointer;
-    color: var(--var-six);
-}
+    color: whitesmoke;
+    /* dark  */
 
+}
+.nav-item.dark {
+    color: whitesmoke;
+}
 /* Nav list end  */
 
 /* Main start  */
 #main {
-    /* background-color: var(--var-secondary);  */
+    /* background-color: blanchedalmond; */
+    background-color: #e19898; 
+    /* dark  */
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    /* align-items: center; */
     place-items: center;
     height: 450px;
     padding: 30px;
     background-image: url(/assets/img/moo/ilustrasi-1.png);
     background-repeat: no-repeat;
     background-size: cover;   
+}
+#main.dark {
+    background-color: #e19898; 
 }
 
 #main::before {
@@ -153,8 +163,8 @@ nav {
     /* font-family: Arial, Helvetica, sans-serif; */
     /* background-color: rgb(240, 248, 255, 0.9 ); */
     /* background-color: #8aa9ffe6; */
-    background-color: var(--var-five);
-    /* color: var(--var-three); */
+    background-color: #205295;
+    color:whitesmoke;
     /* dark */
     padding: 0 0 0 30px;
     border-radius: 15px;
@@ -168,14 +178,16 @@ nav {
     list-style-image: url(/assets/icon/star.svg);
 }
 
-
-#grow {
-    background-color: antiquewhite;
-    padding: 3px;
-    font-size: large;
-    border-radius: 10px;
-    font-weight: bold;
+#main-text.dark {
+    background-color: #205295;
+    color:whitesmoke;
 }
+
+/* #grow {
+    color: salmon;
+    font-size: large;
+    font-weight: bold;
+} */
 
 #cta-explore {
     color: white;
@@ -216,14 +228,24 @@ nav {
 
 /* Section video start */
 #video-section {
-    background-color: var(--var-secondary);
+    /* background-color: blanchedalmond; */
+    background-color: #8d6262;
+}
+#video-section.dark {
+    background-color: #8d6262;
 }
 /* Section video  end */
 
 /* Section Campaign start  */
 #campaign {
-    background-color: var(--var-four);
+    /* background-color: pink; */
+    /* background-color: #a2678a; */
+    background-color: #624f82;
+    /* dark */
     padding-top: 100px;
+}
+#campaign.dark {
+    background-color: #a2678a;
 }
 
 #h2-campaign {
@@ -291,16 +313,24 @@ nav {
 
 /* Section service start  */
 #service {
-    background-color: var(--var-primary);
+    /* background-color: aliceblue; */
+    background-color: #205295;
+    /* dark  */
 }
-
+#service.dark {
+    background-color: #205295;
+}
 /* Section service end  */
 
 /* Section portfolio start  */
 #portfolio {
-    background-color: var(--var-secondary);
+    /* background-color: blanchedalmond; */
+    background-color: #8d6262;
+    /* dark  */
 }
-
+#portfolio.dark {
+    background-color: #8d6262;
+}
 /* Section portfolio end  */
 
 /* Section grid container start  */
@@ -339,8 +369,13 @@ nav {
 
 /* Section form start  */
 #form-section {
-    background-color: var(--var-primary);
+    /* background-color: aliceblue; */
+    background-color: #205295;
+    /* dark  */
     padding-bottom: 50px;
+}
+#form-section.dark {
+    background-color: #205295;
 }
 
 #form-section form , #form-header {
@@ -377,10 +412,16 @@ footer {
     justify-content: space-around;
     border-top: 20px solid navy;
     padding: 50px 30px;
-    background-color: var(--var-primary);
-    color: var(--var-three);
+    /* background-color: aliceblue; */
+    background-color: #205295;
+    color: antiquewhite;
+    /* dark  */
     /* margin-top: 50px; */
     /* justify-content: end; */
+}
+footer.dark {
+    background-color: #205295;
+    color: antiquewhite;
 }
 
 .footer-h3{
@@ -392,8 +433,11 @@ footer {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: var(--var-six);
+    color:beige;
+    /* dark  */
 }
-
+.nav-bottom.dark {
+    color:beige;
+}
 
 /* Footer end */

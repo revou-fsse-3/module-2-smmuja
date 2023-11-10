@@ -71,3 +71,34 @@ header {
     grid-area: portfolio;
 }
 /* Grid container ends */
+
+/* Grid Footer start */
+.footer-container {
+    display: grid;
+    grid-template-areas: 
+    'logo-bottom footer-information footer-socmed'
+    'logo-bottom footer-legal footer-socmed'
+    'logo-bottom footer-support footer-socmed'
+    /* 'logo-bottom footer-socmed'
+    'logo-bottom footer-form' */
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 50px;
+}
+#logo-bottom {
+    grid-area: logo-bottom;
+    width: 50%;
+}
+#footer-information {
+    grid-area: footer-information;
+}
+#footer-legal {
+    grid-area: footer-legal;
+}
+#footer-socmed {
+    grid-area: footer-socmed;
+}
+#footer-form {
+    grid-area: footer-form;
+}
+/* Grid Footer end */

@@ -1,6 +1,16 @@
 # Moo Branding
-<p>A fictional Company Branding Profile</p>
+<p>A fictional Company Profile</p>
 
+## Deployed here:
+https://moo-branding.netlify.app/
+
+## This documentation include
+- About the project
+- Netlify Deploy
+- Custom domain
+- The Author
+
+## 
 ## This Company Profile include:
 - Home
 - Service Section
@@ -8,35 +18,63 @@
 - Call to action 
 - Call to action goal : Make a purchase
 
-## Deployed here:
-https://moo-branding.netlify.app/
 
 ## Version
+### Version 2 (Latest)
+Link : https://moo2.smmuja.com/
 
-### Version 1.3 (Latest)
+### Version 1.3
 Link : https://moo-branding.netlify.app/
-- Desktop View
+<!-- - Desktop View
 ![Desktop](assets/img/moo-desktop-3.png)
 - Mobile View
-![Mobile](assets/img/moo-mobile-3.png)
+![Mobile](assets/img/moo-mobile-3.png) -->
 
 ### Version 1.2
 Link : https://moo-branding-2.netlify.app/
-- Desktop View
-![Desktop](assets/img/moo-desktop-2.png)
-- Mobile View
-![Mobile](assets/img/moo-mobile-2.png)
 
 ### Version 1
 Link : https://moo-branding-1.netlify.app/
-- Desktop View
-![Desktop](assets/img/moo-desktop-1.png)
-- Mobile View
-![Mobile](assets/img/moo-mobile-1.png)
+
+
+## Netlify Deploy
+This project is deployed and hosted on Netlify. Here's how
+1. Create a Netlify account at https://www.netlify.com/
+2. After account is created you will see the home dashboard here, go to "Add new site" section
+![Netlify Add Site](assets/img/deploy/netlify-add-site.png)
+3. We will use Github autodeploy, so let's choose Github
+![Netlify Github](assets/img/deploy/netlify-github.png)
+4. Choose the organization and repository you want to deploy
+![Netlify Github Organization](assets/img/deploy/netlify-github-organisation.png)
+5. Here we will use the default seting, so just go on and click "Deploy"
+![Netlify Repository Deploy](assets/img/deploy/netlify-repository-deploy.png)
+6. Yor site is accessible via Netlify subdomain
+![Netlify Subdomain](assets/img/deploy/netlify-subdomain.png)
+
+
+## Custom Domain 
+1. Buy your own domain via https://niagahoster.co.id/
+![Niagahoster Domain](assets/img/deploy/niagahoster-domain.png)
+2. Go to Netlify > Domain Management > Input your custom domain
+![Netlify Custom Domain](assets/img/deploy/netlify-custom-domain.png)
+![Netlify Custom Domain](assets/img/deploy/netlify-custom-domain-add.png)
+3. Get the DNS records from Netlify
+![Netlify DNS](assets/img/deploy/netlify-dns-1.png)
+![Netlify DNS](assets/img/deploy/netlify-dns-2.png)
+4. Go to Niagahoster > DNS Management. Delete default DNS for A record and WWW CNAME record
+![Niagahoster Delete DNS](assets/img/deploy/niagahoster-delete-dns-1.png)
+![Niagahoster Delete DNS](assets/img/deploy/niagahoster-delete-dns-2.png)
+5.Add the DNS record from Netlify
+![Niagahoster Add DNS](assets/img/deploy/niagahoster-add-dns.png)
+6. Website is acessible using your own domain
+![Netlify Website Custom Domain](assets/img/deploy/netlify-website-custom-domain.png)
 
 
 
-# Siti Muja Profile
+
+
+
+# About the Author
 > Get to know me better 👋🌸
 ## My Bio
 ```

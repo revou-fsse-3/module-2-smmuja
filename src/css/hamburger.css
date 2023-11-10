@@ -33,7 +33,9 @@
         justify-content:space-evenly;
         flex-direction: column;
         align-items:flex-start;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
+        background-color: #205295;
+        /* dark  */
         z-index: -1;
         transform: translateX(100%);
         transition: all 1s;

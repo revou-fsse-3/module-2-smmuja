@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        :root {
+            --var-primary: aliceblue;
+            --var-secondary: blanchedalmond;
+            --var-three: black;
+        }
+        [date-theme='dark'] {
+            --var-primary: #205295;
+            --var-secondary: #8d6262;
+            --var-three: whitesmoke;
+        }
+body {
+    background-color: var(--var-primary);
+}
+.test {
+    background-color: var(--var-secondary);
+    color: var(--var-three)
+}
+    </style>
+
+    <div class="toggle">
+        <input type="checkbox">
+    </div>
+    <div class="test">Test</div>
+
+<script type="text/javascript">
+    const dark=document.querySelector("input[type='checkbox']")
+    dark.addEventListener('click',()=>{
+        if(dark.checked){
+            document.documentElement.setAttribute("date-theme","dark");
+            localStorage.setItem("date-theme","dark");
+        }
+        else{
+            document.documentElement.setAttribute("date-theme","light");
+            localStorage.setItem("date-theme","light");
+        }    })
+    console.log(dark)
+    const currentTheme=localStorage.getItem("date-theme")
+    if(currentTheme ==="dark"){
+        dark.checked=true
+        document.documentElement.setAttribute("date-theme","dark")
+        
+    }
+</script>
+
+</body>
+</html>

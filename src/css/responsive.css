@@ -7,18 +7,22 @@
     h2 {
         text-align: center;
     }
-    /* Logo start  */
+    /* Nav start  */
     #nav-bar{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .logo {
+        flex-direction: column;
+    }
+
     #logo-text {
-        display: none;
+        /* display: none; */
         font-size: xx-small;
     }
-    /* Logo end  */
+    /* Nav end  */
 
     /* Main start  */
     #main-image {
@@ -74,9 +78,42 @@
 .carousel-item img {
     display: block;
     height: auto;
-    max-width: 90%;
+    max-width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 /* Section grid container end */
+
+/* Grid footer start */
+.footer-container {
+    display: grid;
+    grid-template-areas: 
+    'logo-bottom logo-bottom'
+    'footer-information footer-socmed'
+    'footer-legal footer-socmed'
+    'footer-support footer-socmed'
+    /* 'logo-bottom footer-socmed'
+    'logo-bottom footer-form' */
+    ;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
 }
+#logo-bottom {
+    grid-area: logo-bottom;
+    width: 100%;
+}
+#footer-information {
+    grid-area: footer-information;
+}
+#footer-legal {
+    grid-area: footer-legal;
+}
+#footer-socmed {
+    grid-area: footer-socmed;
+}
+#footer-form {
+    grid-area: footer-form;
+}
+/* Grid footer end */
+}
+

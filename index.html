@@ -32,6 +32,17 @@
                     alt="Moo Logo"/>
                     <b id="logo-text">#YourBrandingPartner</b>
                 </div>
+                <div class="dark-toggle" id="dark-toggle">
+                    <label class="toggle">
+                        <input type="checkbox" id="dark-toggle"/>
+                        <span class="slider"></span>
+                    </label>
+                    <b id="dark-text">Dark Mode</b>
+                </div>
+                <!-- <div class="dark-toggle" id="dark-toggle">
+                    <img src="assets/icon/toggle-off-solid.svg" alt="Dark mode toggle">
+                    <b id="dark-text">Dark Mode</b>
+                </div> -->
                 <div class="nav-list" id="nav-list">
                     <a class="nav-item" href="#">Home</a>
                     <a class="nav-item" href="#service">About</a>
@@ -78,7 +89,7 @@
                         <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
                         <div class="carousel-item">
                             <img src="assets/img/moo/campaign-halloween.jpg" alt="Haloween pumpkin/Unsplash">
-                            <div class="carousel-caption">Haloween</div>
+                            <div class="carousel-caption">Halloween</div>
                         </div>
                         <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
                         <div class="carousel-item">
@@ -119,6 +130,7 @@
                         </ol>
                     </div>
                 </div>
+
             </div>
         </section>
     
@@ -262,14 +274,59 @@
         </section>
     
         <footer>
-            <div>
+            <div class="footer-container">
+                <div id="logo-bottom">
+                    <img src="assets/img/moo/moo-logo-landscape.png" alt="Moo Logo">
+                    <p>Our Mission is to help businesses build their brand presence online</p>
+                </div>
+                <div id="footer-information">
+                    <h3 class="footer-h3">Information</h3>
+                    <a class="nav-bottom" href="#">Pricing</a>
+                    <a class="nav-bottom" href="#">About</a>
+                    <a class="nav-bottom" href="#">Careers</a>
+                    <a class="nav-bottom" href="#">Blog</a>
+                </div>
+                <div id="footer-legal">
+                    <h3 class="footer-h3">Legal</h3>
+                    <a class="nav-bottom" href="#">Privacy Policy</a>
+                    <a class="nav-bottom" href="#">Terms and Conditions</a>
+                </div>
+                <div id="footer-support">
+                    <h3 class="footer-h3">Support</h3>
+                    <a class="nav-bottom" href="#">FAQ</a>
+                    <a class="nav-bottom" href="#">Contact</a>
+                </div>
+                <div id="footer-socmed">
+                    <h3 class="footer-h3">Social Media</h3>
+                    <a class="nav-bottom" href="#">Facebook</a>
+                    <a class="nav-bottom" href="#">Instagram</a>
+                    <a class="nav-bottom" href="#">Twitter</a>
+                    <a class="nav-bottom" href="#">Youtube</a>
+                    <a class="nav-bottom" href="#">Pinterest</a>
+                    <a class="nav-bottom" href="#">LinkedIn</a>
+                </div>
+                <!-- <div class="footer-form">
+                    <h4>Keep up to date on Digital Branding</h4>
+                    <p>With our free newsletters</p>
+                    <form name="footerForm" action="#" onsubmit="return validateForm()" method="post">
+                    <div>
+                        <label for="email" class="label-name">Email :</label>
+                        <input type="email" id="email" class="input-form" placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit" id="formsubmit">Subscribe</button>
+                    </form> -->
+    
+                </div>
+            </div>
+
+            <!-- <div>
                 <a class="nav-bottom" href="#">About</a>
                 <a class="nav-bottom" href="#">Career</a>
                 <a class="nav-bottom" href="#">Help</a>
                 <a class="nav-bottom" href="#">Blog</a>
                 <a class="nav-bottom" href="#">Privacy</a>
                 <a class="nav-bottom" href="#">Terms</a>
-            </div>
+            </div> -->
         </footer>
     </div>
     
@@ -277,5 +334,6 @@
     
     <script src="src/js/index.js"></script>
     <script src="src/js/hamburger.js"></script>
+    <script src="src/js/dark.js"></script>
 </body>
 </html>
